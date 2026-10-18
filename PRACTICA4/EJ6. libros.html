@@ -3,9 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Libros</title>
+    <style>
+        table,th,td {
+            border: 1px solid black;
+            text-align: center;
+        }
+        th {
+            background-color:#263B55;
+            color: white;
+            font-weight: bold;
+        }
+        #categoria-fantasia {
+            background-color: #DCEFE4;
+            color: #23674D;
+            font-weight: bold;
+        }
+        #categoria-ciencia {
+            background-color: #D9E9FA;
+            color: #174D83;
+            font-weight: bold;
+        }
+        #precio{
+            color: rgb(1, 86, 1);
+            font-weight: bold;
+        }
+    </style>
+    <title>Catálogo de libros</title>
 </head>
 <body>
-    
+    <table>
+        <caption> <b>Catágolo de libros</b></caption>
+        <thead>
+            <tr>
+                <th>Categoría</th>
+                <th>Portada</th>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Fecha de Publicación</th>
+                <th>Precio</th>
+                <th>Enlace de compra</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="categoria-fantasia" rowspan="3">Fantasía</td>
+                <td><img src="C:/Users/Samuel/Desktop/1_DAM/LENGUAJE DE MARCAS/Ejercicios-Lenguajes/PRACTICA4/IMG/Harrypotter.jpg" alt="libro de harry potter y la piedra filosofal" width="100"></td>
+                <td>Harry Potter y la pierda filosofal</td>
+                <td>J. K. Rowling</td>
+                <td>1997</td>
+                <td id="precio">16,95€</td>
+                <td><a href="https://www.penguinlibros.com/es/libros-ninos-9-anos/37676-libro-harry-potter-y-la-piedra-filosofal-harry-potter-1-9788478884452"> Comprar</a></td>
+            </tr>
+            <tr>
+                <td><img src="C:/Users/Samuel/Desktop/1_DAM/LENGUAJE DE MARCAS/Ejercicios-Lenguajes/PRACTICA4/IMG/elhobbit.webp" alt="libro del hobbit" width="100"></td>
+                <td>El hobbit</td>
+                <td>J. R. R. Tolkien</td>
+                <td>1937</td>
+                <td id="precio">15,00€ aprox.</td>
+                <td><a href="https://www.casadellibro.com/libro-el-hobbit-edicion-especial-con-cantos-decorados/9788445022719/18585905">Comprar</a></td>
+            </tr>
+            <tr>
+                <td><img src="C:/Users/Samuel/Desktop/1_DAM/LENGUAJE DE MARCAS/Ejercicios-Lenguajes/PRACTICA4/IMG/nombredelviento.webp" alt="libro del nombre del viento " width="100"></td>
+                <td>El nombre del viento</td>
+                <td>Patrick Rothfuss</td>
+                <td>2007</td>
+                <td id="precio">25,00€ aprox.</td>
+                <td><a href="https://www.casadellibro.com/libro-el-nombre-del-viento-saga-cronica-del-asesino-de-reyes-1/9788499082479/1819660">Comprar</a></td>
+            </tr>
+            <tr>
+                <td id="categoria-ciencia" rowspan="3">Ciencia ficción</td>  
+                <td><img src="C:/Users/Samuel/Desktop/1_DAM/LENGUAJE DE MARCAS/Ejercicios-Lenguajes/PRACTICA4/IMG/dune-las-cronicas-de-dune-1.jpg" alt="libro de dune " width="100"></td>
+                <td>Dune</td>
+                <td>Frank Herbert</td>
+                <td>1965</td>
+                <td id="precio"> 14,95€</td>
+                <td><a href="https://www.penguinlibros.com/es/libros-de-ciencia-ficcion/34587-libro-dune-las-cronicas-de-dune-1-9788466353779">Comprar</a></td> 
+            </tr>
+            <tr>
+                <td><img src="C:/Users/Samuel/Desktop/1_DAM/LENGUAJE DE MARCAS/Ejercicios-Lenguajes/PRACTICA4/IMG/fundacion.webp" alt="libro de fundacion " width="100"></td>
+                <td>Fundación</td>
+                <td>Isaac Asimov</td>
+                <td>1951</td>
+                <td id="precio">12,00€ aprox.</td>
+                <td><a href="https://www.casadellibro.com/libro-fundacion/9788497599245/924945">Comprar</a></td>
+            </tr>
+            <tr>
+                <td><img src="C:/Users/Samuel/Desktop/1_DAM/LENGUAJE DE MARCAS/Ejercicios-Lenguajes/PRACTICA4/IMG/odisea.jpg" alt="libro de odisa del espacio " width="100"></td>
+                <td>2001: Una odisea del espacio</td>
+                <td>ArthurC. Clarke</td>
+                <td>1968</td>
+                <td id="precio">30,00€ aprox.</td>
+                <td><a href="https://www.amazon.es/-/en/2001-ESPACIO-ANIVERSARIO-COLECCION-ANIVERSARIOS/dp/8410247364/ref=sr_1_2?s=books&sr=1-2">Comprar</a></td>
+            </tr>
+
+        </tbody>
+    </table>
 </body>
 </html>
