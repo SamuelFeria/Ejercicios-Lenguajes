@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificar incidencia</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Datos de la incidencia:</legend>
+            <label for="usuario">Usuario:</label><br>
+            <input type="text" id="usuario" name="usuario"><br><br>
+            <label for="departamento">Departamento:</label><br>
+            <select id="departamento" name="departamento">
+                <option value="informatica">Informática</option>
+            </select>
+            <br><br>
+            <label for="descripcion">Descripción:</label><br>
+            <textarea id="descripcion" name="descripcion" rows="3" cols="40" placeholder="Describa la incidencia..."></textarea><br><br>
+            <label for="contraseña">Contraseña:</label><br>
+            <input type="password" id="contraseña" name="contraseña"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Botones de reset y envío:</legend>
+            <button type="reset">Resetear</button>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
