@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        fieldset {
+            background-color: #B0C9F7;
+            border: 3px solid #7898D5;
+            border-radius: 10px;
+            padding:20px;
+            width: 400px;
+            
+        }
+        label{
+            font-weight:bold;
+        }
+        
+        select, input[type="text"],input[type="email"]{
+            width: 95%;
+        }
+        textarea{
+            width: 95%;
+        }
+        
+        
+    </style>
+    <title>Formulario con aspecto sin ccs</title>
+</head>
+<body>
+    <form action="" method="get">
+        <fieldset>
+            <label for="nombre">Nombre:</label>
+            <br>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+            <br><br>
+
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email" name="email" placeholder="correo@empresa.com"> 
+            <br><br>
+
+            <label for="asunto">Aunto:</label>
+            <br>
+            <select id="asunto" name="asunto" size="3">
+                <option value="presupuesto">Pedir presupuesto web</option>
+                <option value="cita">Solicitar cita previa</option>
+                <option value="otros">Otros</option>
+            </select>
+            <br><br>
+
+            <label for="conocido">¿Cómo nos has conocido?</label>
+            <br><br>
+            <input type="checkbox" id="amigo" name="amigo">
+            <label for="amigo">Un amigo</label>
+
+            <input type="checkbox" id="google" name="google">
+            <label for="google">Googleando</label>
+
+            <input type="checkbox"id="buzoneo" name="buzoneo">
+            <label for="buzoneo" >Buzoneo</label>
+
+            <input type="checkbox" id="otros" name="otros">
+            <label for="otros">Otros</label>
+            <br><br>
+
+            <label for="mensaje">Escribe tu mensaje</label>
+            <br>
+            <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea>
+            <br><br>
+
+            <input type="checkbox"  id="politicas" name="politicas" value="acepto" required>
+            <label for="politicas">He leído y acepto el<a href=""> aviso legal y la política de privacidad.</a></label>
+        </fieldset>
+    </form>
+</body>
+</html>

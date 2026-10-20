@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        fieldset{
+            font-weight: bold;
+            background-color:#c9b0f7;
+            border: 3px solid #000000;
+            border-radius: 10px;
+        }
+    </style>
+    <title>Fiesta de cumpleaños</title>
+</head>
+<body>
+    <h1>¡Fiesta de cumpleaños de disfraces!</h1>
+    <p>¡Hola! Voy a celebrar mi cumpleaños y quiero organizar una fiesta inolvidable. Rellena este formulario para ayudarme a prepararla.</p>
+
+    <form action="" method="get">
+            <fieldset>
+            <label for="nombre">1. ¿Cómo te llamas?</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+            <br><br>
+            
+            <label for="email">2. ¿Cuál es tu correo electrónico?</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+            <br>
+
+            <p>3. ¿Vas a venir a la fiesta?</p>
+            <input type="radio" id="si" name="asistencia" value="si">
+            <label for="si">Sí</label>
+
+            <input type="radio" id="no" name="asistencia" value="no">
+            <label for="no">No</label>
+            <br><br>
+
+            <label for="tematica">4. ¿Qué temática de disfraces prefieres?</label>
+            <select id="tematica" name="tematica">
+            <option value="terror">Terror</option>
+            <option value="superheroes">Superhéroes</option>
+            <option value="cine">Personajes de películas</option>
+            <option value="epoca">Otra época histórica</option>
+            <option value="libre">¡Disfraz libre!</option>
+            </select>
+            <br>
+
+            <p>5. ¿Tienes alguna intolerancia o alergia alimentaria?</p>
+            <input type="checkbox" id="gluten" name="alergias" value="gluten">
+            <label for="gluten">Gluten</label>
+
+            <input type="checkbox" id="lactosa" name="alergias" value="lactosa">
+            <label for="lactosa">Lactosa</label>
+
+            <input type="checkbox" id="frutos" name="alergias" value="frutos secos">
+            <label for="frutos">Frutos secos</label>
+
+            <input type="checkbox" id="ninguna" name="alergias" value="ninguna">
+            <label for="ninguna">Ninguna</label>
+            <br>
+
+            <p>6. ¿Vendrás con acompañante?</p>
+            <input type="radio" id="acompananteSi" name="acompanante" value="si">
+            <label for="acompananteSi">Sí</label>
+
+            <input type="radio" id="acompananteNo" name="acompanante" value="no">
+            <label for="acompananteNo">No</label>
+            <br><br>
+
+            <label for="fecha">7. ¿Qué día te viene mejor?</label>
+            <input type="date" id="fecha" name="fecha">
+            <br><br>
+
+            <label for="musica">8. ¿Qué música te gustaría escuchar?</label>
+            <input type="text" id="musica" name="musica"placeholder="Pop, reguetón, rock...">
+            <br><br>
+
+            <label for="comentarios">9. ¿Tienes alguna sugerencia para la fiesta?</label>
+            <br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="40" placeholder="¡Cuéntame tus ideas!"></textarea>
+            <br><br>
+
+            <label for="telefono">10. Nº de teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder=" Nº de telefono" required>
+            <br><br>
+        
+            <button type="submit">Enviar formulario</button>
+            <button type="reset">Borrar respuestas</button>
+        </fieldset>
+
+    </form>
+</body>
+</html>
