@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web con tres vídeos</title>
+</head>
+<body>
+    <header>
+        <h1>Galería de Vídeos Multimedia</h1>
+        <nav>
+            <a href="#betis">Betis</a> |
+            <a href="#joaquin">Joaquín</a> |
+            <a href="#asunçao">Assunçao</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Himno del Real Betis Balompié</h2>
+            <article id="betis">
+                <video width="640" height="480" controls poster="./IMG/betis.webp">
+                <source src="./video/HimnodeRealBetis.mp4" type="video/mp4">
+                <track src="video/subtitulos1.vtt" kind="subtitles" srclang="es" label="Español" default>
+                Su navegador no soporta el elemento de vídeo.
+                </video>
+            </article>
+            <hr>
+            <h2>Joaquin Sánchez</h2>
+            <article id="joaquin">
+                <video width="640" height="480" controls poster="./IMG/joaquin.webp">
+                <source src="./video/JoaquinSanchez.mp4" type="video/mp4">
+                <track src="video/subtitulos1.vtt" kind="subtitles" srclang="es" label="Español" default>
+                Su navegador no soporta el elemento de vídeo.
+                </video>
+            </article>
+            <hr>
+            <h2>Marcos Assunçao</h2>
+            <article id="asunçao">
+                <video width="640" height="480" controls poster="./IMG/asunçao.webp">
+                <source src="./video/MarcosAssunção.mp4" type="video/mp4">
+                <track src="video/subtitulos1.vtt" kind="subtitles" srclang="es" label="Español" default>
+                Su navegador no soporta el elemento de vídeo.
+                </video>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
