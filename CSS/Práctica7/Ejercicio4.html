@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de planetas</title>
+    <style>
+        table{
+            text-align: center; 
+            width: 100%;
+            font-weight: bold;
+            color:blueviolet;
+            font-size: 20px;
+        }
+        table, tr,th,td{
+            border: 2px solid red;
+            border-collapse: collapse;
+            background-color:aqua;
+        }
+        th:nth-child(odd),td:nth-child(odd){
+            background-color: yellow;
+        }
+        th{
+            font-weight: bold;
+            color:rgb(245, 117, 5);
+            text-decoration: underline;
+            font-style: italic;
+            font-size: 30px;
+        }
+        td:nth-child(1):hover,th:nth-child(1):hover{
+            background-color: black;
+            width: 30px;
+        }
+        
+        td:nth-child(3):hover,th:nth-child(3):hover{
+            cursor: pointer;   
+        }
+        @keyframes girar {
+            from { transform: rotate(0deg); }
+            to   { transform: rotate(360deg); }
+        }
+        td:nth-child(3):active,th:nth-child(3):active{
+            background-color: saddlebrown;
+            animation: girar 1s linear infinite;
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <tbody>
+            <table>
+                <caption>Listado de planetas</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Distancia al Sol</th>
+                        <th>Masa</th>
+                        <th>Satélites</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!--Mercurio-->
+                    <tr>
+                        <td>Mercurio</td>
+                        <td>57,9 M Km</td>
+                        <td>3,30·10²³ Kg</td>
+                        <td>
+                            <ul>
+                                <li>Ninguno</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <!--Venus-->
+                    <tr>
+                        <td>Venus</td>
+                        <td>108,2 M Km</td>
+                        <td>4,87·10²⁴ kg</td>
+                        <td>
+                            <ul>
+                                <li>Ninguno</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <!--Tierra-->
+                    <tr>
+                        <td>Tierra</td>
+                        <td>149,6 M km</td>
+                        <td>5,97·10²⁴ kg</td>
+                        <td>
+                            <ul>
+                                <li>Luna</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <!--Marte-->
+                    <tr>
+                        <td>Marte</td>
+                        <td>227,9 M km</td>
+                        <td>6,42·10²³ kg</td>
+                        <td>
+                            <ul>
+                                <li>Fobos</li>
+                                <li>Deimos</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <!--Júpiter-->
+                    <tr>
+                        <td>Júpiter</td>
+                        <td>778,5 M km</td>
+                        <td>1,90·10²⁷ kg</td>
+                        <td>
+                            <ul>
+                                <li>ío</li>
+                                <li>Europa</li>
+                                <li>Ganímedes</li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </tbody>
+    </main>
+</body>
+</html>

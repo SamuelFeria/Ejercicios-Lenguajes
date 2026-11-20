@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realiza la siguiente lista con CSS</title>
+    <style>
+        li:hover{
+            width: fit-content;
+            border: 1px solid red;
+            color: blue;
+        } 
+        #sin{
+            list-style-type: none;
+        }
+        #circulo{
+            list-style-type: circle;
+        }
+        #cuadrado{
+            list-style-type: square;
+        }
+        #romano{
+            list-style-type: lower-roman;
+        }
+        #griega{
+            list-style-type: lower-greek;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p>Lista sin elemenmto grafico:</p>
+        <!--Lista sin elemento-->
+        <ul id="sin">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+        <p>Lista con círculos:</p>
+        <!--Lista con círculos-->
+        <ul id="circulo">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+        <p>Lista con cuadrados:</p>
+        <!--Lista con cuadrados-->
+        <ul id="cuadrado">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+        <p>Lista con números romanos:</p>
+        <!--Lista cpm múmeros romanos-->
+        <ol id="romano">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ol>
+        <p>Lista con letras griegas:</p>
+        <!--Lista con letras griegas-->
+        <ol id="griega">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ol>
+    </main>
+</body>
+</html>
