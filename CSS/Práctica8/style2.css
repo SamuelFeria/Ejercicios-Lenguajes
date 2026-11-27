@@ -1,0 +1,30 @@
+#contenedor{
+    width: 80%;
+    max-width: 950px;
+}
+#cabecera{
+    font-size: 2em;
+    margin-bottom: 0,5em;
+}
+#menu{
+    margin-bottom: 2em;
+}
+li{
+    display: inline-block;
+}
+a{
+    color:rgb(31, 106, 245);
+    text-decoration: none;
+}
+a:hover{
+    color:black;
+}
+#contenido{
+    background-color: grey;
+    border: 2px solid red;
+    color: white
+}
+.articulo h2{
+    font-family: verdana;
+    color:red
+}
